@@ -1,0 +1,43 @@
+# ============================================
+# X-Verba Healthcare Referral Agent
+# Phase 1 Dependencies
+# ============================================
+
+# --------------------------------------------
+# VSL Governance
+# --------------------------------------------
+
+# Microsoft Agent Framework VSL adapter.
+# VSL-Core is installed transitively by this adapter.
+vsl-maf @ git+https://github.com/supersemantics/VSL-Microsoft-agent-framework.git@f6cdfe7968e81f12757209e206b7adc31763bd4a
+
+# --------------------------------------------
+# Microsoft Agent Framework - Local LLM
+# --------------------------------------------
+
+agent-framework
+agent-framework-ollama
+
+# --------------------------------------------
+# Backend
+# --------------------------------------------
+pandas
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+
+# --------------------------------------------
+# Database
+# --------------------------------------------
+
+sqlalchemy
+
+# --------------------------------------------
+# Testing
+# --------------------------------------------
+
+pytest
+pytest-asyncio
+httpx

@@ -1,0 +1,21 @@
+# Environment
+.venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Database
+data/healthcare.db
+
+# VSL runtime ledger
+data/ledger.jsonl
+
+# Test/cache
+.pytest_cache/
+# Synthea source repository
+/synthea/
+
+# Synthea source repository
+/synthea/

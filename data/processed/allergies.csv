@@ -1,0 +1,55 @@
+patient_id,allergy,status
+31e525eb-4a80-351d-d1f7-111cfe611f02,Allergic disposition (finding),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Latex (substance),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Bee venom (substance),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Mold (organism),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,House dust mite (organism),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Animal dander (substance),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Grass pollen (substance),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Tree pollen (substance),active
+31e525eb-4a80-351d-d1f7-111cfe611f02,Eggs (edible) (substance),active
+face161f-5d59-f855-85ef-a5b3eb40c45b,Allergic disposition (finding),active
+face161f-5d59-f855-85ef-a5b3eb40c45b,Peanut (substance),active
+2a5559b4-5232-1f42-053a-527d492d754e,Allergic disposition (finding),active
+2a5559b4-5232-1f42-053a-527d492d754e,Latex (substance),active
+b09b8e37-ac3e-cecf-fdef-a296b5569890,Allergic disposition (finding),active
+b09b8e37-ac3e-cecf-fdef-a296b5569890,Penicillin V,active
+b09b8e37-ac3e-cecf-fdef-a296b5569890,Eggs (edible) (substance),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Allergic disposition (finding),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Mold (organism),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,House dust mite (organism),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Animal dander (substance),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Tree pollen (substance),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Lisinopril,active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Cow's milk (substance),active
+f6b9133e-4b99-df7b-f4fe-c0d5322fb084,Peanut (substance),active
+474868a0-2454-7869-7cef-cd54a1adf87c,Allergic disposition (finding),active
+474868a0-2454-7869-7cef-cd54a1adf87c,Mold (organism),active
+474868a0-2454-7869-7cef-cd54a1adf87c,House dust mite (organism),active
+474868a0-2454-7869-7cef-cd54a1adf87c,Animal dander (substance),active
+474868a0-2454-7869-7cef-cd54a1adf87c,Grass pollen (substance),active
+474868a0-2454-7869-7cef-cd54a1adf87c,Aspirin,active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Allergic disposition (finding),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Mold (organism),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,House dust mite (organism),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Animal dander (substance),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Grass pollen (substance),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Tree pollen (substance),active
+fc33c3a5-b232-1491-d6ba-3406e275cd1c,Eggs (edible) (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Allergic disposition (finding),active
+c2816186-fb03-4ba7-b402-bd216946be27,Latex (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Bee venom (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Mold (organism),active
+c2816186-fb03-4ba7-b402-bd216946be27,House dust mite (organism),active
+c2816186-fb03-4ba7-b402-bd216946be27,Animal dander (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Grass pollen (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Tree pollen (substance),active
+c2816186-fb03-4ba7-b402-bd216946be27,Sulfamethoxazole / Trimethoprim,active
+68040ca9-9900-ef8a-89c0-950231c9c8a4,Allergic disposition (finding),active
+68040ca9-9900-ef8a-89c0-950231c9c8a4,Penicillin V,active
+1d0776f9-152f-4a5c-9f3a-8e501815e8f6,Allergic disposition (finding),active
+1d0776f9-152f-4a5c-9f3a-8e501815e8f6,Fish (substance),active
+5f7982ca-861c-1a0e-dbfb-3c51fa043abb,Allergic disposition (finding),active
+1a91349e-b124-da1f-4bf0-e11e69e0c943,Allergic disposition (finding),active
+1a91349e-b124-da1f-4bf0-e11e69e0c943,Aspirin,active
+1a91349e-b124-da1f-4bf0-e11e69e0c943,Fish (substance),active
