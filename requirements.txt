@@ -12,11 +12,11 @@
 vsl-maf @ git+https://github.com/supersemantics/VSL-Microsoft-agent-framework.git@f6cdfe7968e81f12757209e206b7adc31763bd4a
 
 # --------------------------------------------
-# Microsoft Agent Framework - Local LLM
+# Microsoft Agent Framework - OpenAI
 # --------------------------------------------
 
 agent-framework
-agent-framework-ollama
+agent-framework-openai
 
 # --------------------------------------------
 # Backend

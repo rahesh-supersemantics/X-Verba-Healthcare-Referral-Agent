@@ -3,7 +3,7 @@ Chat service: multi-turn conversations through Microsoft Agent Framework.
 
 Per conversation (backend.conversation.Conversation):
   - an AgentSession holds the message history (user, assistant, tool calls,
-    tool results), so Llama 3.2 sees the whole conversation every turn;
+    tool results), so the configured OpenAI model sees the whole conversation every turn;
   - a ReferralContext holds the validated facts governed actions depend on
     (patient, department, reason, stage), injected into the instructions.
 
@@ -206,6 +206,10 @@ class ChatService:
                     self._inputs(cid, message), session=conversation.session
                 )
             except Exception as exc:
+                from backend.agent import OpenAIConfigurationError
+
+                if isinstance(exc, OpenAIConfigurationError):
+                    raise
                 logger.exception("Conversation agent run failed.")
                 raise LLMUnavailableError("The language model is unavailable.") from exc
             text = getattr(response, "text", None) or ""
@@ -260,6 +264,10 @@ class ChatService:
                 )
                 agent_reply: str | None = getattr(response, "text", None) or ""
             except Exception as exc:
+                from backend.agent import OpenAIConfigurationError
+
+                if isinstance(exc, OpenAIConfigurationError):
+                    raise
                 logger.exception("Agent run failed.")
                 if not outcomes and not reviews and not actions:
                     raise LLMUnavailableError(

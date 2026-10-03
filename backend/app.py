@@ -26,6 +26,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 
+from backend.agent import OpenAIConfigurationError
 from backend.chat import ChatService, LLMUnavailableError
 from backend.clinical_workflow import (
     ClinicalReviewRequest,
@@ -231,11 +232,13 @@ async def chat(
 ) -> ChatResponse | JSONResponse:
     try:
         result = await service.chat(body.message, body.conversation_id)
+    except OpenAIConfigurationError:
+        return _error(503, "LLM_UNAVAILABLE", "OPENAI_API_KEY is not configured.")
     except LLMUnavailableError:
         return _error(
             503,
             "LLM_UNAVAILABLE",
-            "The language model is unavailable. Check that Ollama is running.",
+            "The language model is unavailable. Check the OpenAI API configuration and connectivity.",
         )
 
     workflow_results = [ReferralResponse.from_outcome(o) for o in result.workflow_results]

@@ -184,9 +184,9 @@ class ClinicalReviewWorkflow:
     @property
     def analyzer(self) -> ClinicalAnalyzer:
         if self._analyzer is None:
-            from backend.analysis import OllamaClinicalAnalyzer
+            from backend.analysis import OpenAIClinicalAnalyzer
 
-            self._analyzer = OllamaClinicalAnalyzer()
+            self._analyzer = OpenAIClinicalAnalyzer()
         return self._analyzer
 
     @property
