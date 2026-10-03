@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
 from backend.database.connection import engine
-from backend.tools.patient_search import search_patient
+from scripts.legacy.patient_search import search_patient
 
 
 def main():

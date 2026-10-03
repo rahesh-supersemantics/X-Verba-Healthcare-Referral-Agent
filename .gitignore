@@ -5,17 +5,27 @@
 # Python
 __pycache__/
 *.py[cod]
+.pytest_cache/
 
 # Database
 data/healthcare.db
+*.db
+*.sqlite
+*.sqlite3
 
 # VSL runtime ledger
 data/ledger.jsonl
 
-# Test/cache
-.pytest_cache/
 # Synthea source repository
 /synthea/
 
-# Synthea source repository
-/synthea/
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Build / cache
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

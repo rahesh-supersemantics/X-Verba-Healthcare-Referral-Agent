@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from sqlalchemy import create_engine
@@ -15,7 +16,12 @@ DATABASE_DIR.mkdir(
 
 DATABASE_PATH = DATABASE_DIR / "healthcare.db"
 
-DATABASE_URL = f"sqlite:///{DATABASE_PATH}"
+# XVERBA_DATABASE_URL overrides the default SQLite file. The test suite
+# uses it to run against an isolated temporary database.
+DATABASE_URL = os.environ.get(
+    "XVERBA_DATABASE_URL",
+    f"sqlite:///{DATABASE_PATH}",
+)
 
 
 engine = create_engine(
